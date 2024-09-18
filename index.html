@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE Prep Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your GATE 2025 Prep Journey</h1>
+        <p>“Believe you can and you're halfway there.” – Theodore Roosevelt</p>
+        <p>Countdown to GATE 2025: <span id="countdown"></span></p>
+    </header>
+
+    <section id="motivation">
+        <h2>Daily Motivation</h2>
+        <p id="quote">"Your daily quote will appear here!"</p>
+    </section>
+
+    <section id="planner">
+        <h2>Daily Planner</h2>
+        <p><a href="planner.html">Plan Your Day</a></p>
+    </section>
+
+    <section id="blogs">
+        <h2>Self Blogs</h2>
+        <p>Write about your progress, thoughts, and journey.</p>
+        <textarea id="blog-input" rows="5" placeholder="Write your blog here..."></textarea>
+        <button onclick="saveBlog()">Save Blog</button>
+        <div id="blog-list">
+            <h3>Previous Blogs</h3>
+            <!-- Saved blogs will appear here -->
+        </div>
+    </section>
+
+    <section id="tasks">
+        <h2>Tasks Not to Forget</h2>
+        <ul id="task-list">
+            <li>Revise Chapter 1: Algorithms</li>
+            <li>Complete 1 mock test</li>
+            <li>Analyze mistakes</li>
+        </ul>
+        <input type="text" id="task-input" placeholder="Add a task..." />
+        <button onclick="addTask()">Add Task</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
